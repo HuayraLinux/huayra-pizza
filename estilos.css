@@ -3,7 +3,9 @@
 
 #contenedor {  text-align: center; margin: 25px 0px}
 
-#contenedor1 {text-align: center;
- width: 50%;
- margin: 25px 0px;
+.contenedor-desafio {
+padding: 50px;
+text-align: left;
+width: 50%;
+margin: 25px 0px;
   }
