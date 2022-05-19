@@ -15,7 +15,7 @@ width: 50%;
 
 .grisclaro1 { background-color: #eee }
 .grisclaro2 {  background-color: #ddd }
-
+.alturamin { min-height: 300px }
 
 .tarjeta {
 padding: 20px;
@@ -44,7 +44,7 @@ color: #000;
 }
 .palabraArrastrable { 
 background: #c76cca;
-padding: 1px 5px 1px 5px;
+padding: 2px 6px;
 -moz-border-radius: 5px;
 -webkit-border-radius: 5px;
 margin: 1px;
