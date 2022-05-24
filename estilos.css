@@ -51,5 +51,12 @@ margin: 1px;
 width: -moz-fit-content;
 color: #fff;
 }
-.over {  background: pink;
-}
+.over {  background: pink; }
+
+.letra { font-size: x-large; color: #000 !important; }
+#letra-z { background: #ee7692; }
+#letra-a { background: #ee6fb6; }
+#letra-f { background: #be84bf; }
+#letra-m { background: #ee7692; }
+#letra-w { background: #7fbde2; }
+#letra-y { background: #a9d890; }
