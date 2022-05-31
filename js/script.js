@@ -83,3 +83,14 @@ function pulsar(e) {
         e.preventDefault();
     }
 }
+	function comenzarDiez() {
+  const now = new Date()
+  const hours = 3 * 60 * 1000
+  const timer = new Date(now.getTime() + hours)
+
+   UIkit.countdown(document.querySelector('#cuenta'), {
+     date: timer.toISOString()
+   });
+   UIkit.countdown(cuenta).start();
+   document.getElementById("comenzar").style.visibility = "hidden";
+}
