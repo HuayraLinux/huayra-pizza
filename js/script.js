@@ -1,5 +1,4 @@
 
-
 const draggableListItems = document.querySelectorAll('.palabraArrastrable');
 
 // current phrase being dragged
@@ -71,3 +70,12 @@ function addEventListeners() {
   //  item.addEventListener('dragleave', dragLeave);
   })
 }
+
+function chequearpass() {
+	if (document.getElementById("password").value == "hipotenusa") {
+		UIkit.countdown(cuenta).stop();
+		document.getElementById("password").style.borderColor = "green";
+		document.getElementById("password").style.border = "4px solid green";
+		 };
+};
+

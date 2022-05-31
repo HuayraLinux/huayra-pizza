@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="estilos.css" />
         <script src="uikit-3.13.5/js/uikit.min.js"></script>
         <script src="uikit-3.13.5/js/uikit-icons.min.js"></script>
+
     </head>
     <body>
 		
@@ -292,24 +293,42 @@
  
  <!--  DESAFIO 10 -->
 <div class="contenedor-desafio grisclaro2 alturamin" >
-	<h4>DESAFÍO 8</h4>
-	<div>MISION SECRETA</div>
-	<br/>
+	<h4>DESAFÍO 10</h4>
+	<span><h3>MISION SECRETA</h3></span> <button id="comenzar" class="uk-button uk-button-default" type="button" uk-toggle="target: #toggle-usage" onclick="comenzarDiez();">Comenzar</button>
+	
+    <div id="toggle-usage" hidden="">
+  
+	
 
-<div id="countdown1"></div>
+<div id="cuenta" class="uk-grid-small uk-child-width-auto" uk-grid>
+    <div>
+        <div class="uk-countdown-number uk-countdown-minutes"></div>
+        <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Minutos</div>
+    </div>
+    <div class="uk-countdown-separator">:</div>
+    <div>
+        <div class="uk-countdown-number uk-countdown-seconds"></div>
+        <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Segundos</div>
+    </div>
+</div>
 
-	<p>El agente especial llegó a la computadora central, tenía pocos minutos para desactivar el detonador. Revisó debajo del teclado en busca de la contraseña y encontró un papel con la siguiente frase: "La suma de los cuadrados de los catetos es igual al cuadrado de la..."  la palabra que completa la frase es la contraseña, pensó.<br/>¿podrás desifrarla y detener el detonador?</p>
+	<p>El agente especial llegó a la computadora central, tenía pocos minutos para desactivar el detonador. Revisó debajo del teclado en busca de la
+	 contraseña y encontró un papel con la siguiente frase:<br/>
+	 "La suma de los cuadrados de los catetos es igual al cuadrado de la ...".<br/>- La palabra que completa la frase es la contraseña.- pensó.<br/>¿podrás desifrarla y detener el detonador?</p>
 	
 	<form>
     <div class="uk-margin">
         <div class="uk-inline">
             <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
-            <input class="uk-input" type="text">
+            <input id="password" class="uk-input" type="text" onkeyup="chequearpass();" autocomplete="off">
+
         </div>
     </div>
 	</form>
 	
 </div>
+
+  </div>
 <!-- fin DESAFIO 10 -->
 <br/>
 <br/>
@@ -320,3 +339,17 @@
 
 
 <script src="js/script.js"></script>
+<script>
+	function comenzarDiez() {
+  const now = new Date()
+  const hours = 3 * 60 * 1000
+  const timer = new Date(now.getTime() + hours)
+
+   UIkit.countdown(document.querySelector('#cuenta'), {
+     date: timer.toISOString()
+   });
+   UIkit.countdown(cuenta).start();
+   document.getElementById("comenzar").style.visibility = "hidden";
+}
+</script>
+
