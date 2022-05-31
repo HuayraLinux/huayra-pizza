@@ -78,4 +78,8 @@ function chequearpass() {
 		document.getElementById("password").style.border = "4px solid green";
 		 };
 };
-
+function pulsar(e) {
+    if (e.keyCode === 13 && !e.shiftKey) {
+        e.preventDefault();
+    }
+}
