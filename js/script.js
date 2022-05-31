@@ -55,6 +55,17 @@ function checkForMatch(selected, dropTarget) {
     case 'e4':
       return dropTarget === 's4' ? true : false;
 
+    case 'b1':
+      return dropTarget === 'a1' ? true : false;
+
+    case 'b2':
+      return dropTarget === 'a2' ? true : false;
+
+    case 'b3':
+      return dropTarget === 'a3' ? true : false;
+
+    case 'b4':
+      return dropTarget === 'a4' ? true : false;
     default:
       return false;
   }
