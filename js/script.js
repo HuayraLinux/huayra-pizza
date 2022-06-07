@@ -44,31 +44,30 @@ function dragDrop() {
 function checkForMatch(selected, dropTarget) {
   switch (selected) {
     case 'e1':
-      return dropTarget === 's1' ? true : false;
+      return dropTarget === 's1';
 
     case 'e2':
-      return dropTarget === 's2' ? true : false;
+      return dropTarget === 's2';
 
     case 'e3':
-      return dropTarget === 's3' ? true : false;
+      return dropTarget === 's3';
 
     case 'e4':
-      return dropTarget === 's4' ? true : false;
+      return dropTarget === 's4';
 
     case 'b1':
-      return dropTarget === 'a1' ? true : false;
+      return dropTarget === 'a1';
 
     case 'b2':
-      return dropTarget === 'a2' ? true : false;
+      return dropTarget === 'a2';
 
     case 'b3':
-      return dropTarget === 'a3' ? true : false;
+      return dropTarget === 'a3';
 
     case 'b4':
-      return dropTarget === 'a4' ? true : false;
-    default:
-      return false;
+      return dropTarget === 'a4';
   }
+  return false;
 }
 
 
